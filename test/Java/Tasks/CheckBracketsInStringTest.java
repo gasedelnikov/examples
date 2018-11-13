@@ -12,8 +12,8 @@ public class CheckBracketsInStringTest {
     @Test
     public void testCheckBracketsInString_positive() {
         CheckBracketsInString instance = new CheckBracketsInString();
-        assertEquals(true, instance.checkBracketsInString("12345"));        
-        assertEquals(true, instance.checkBracketsInString("1(23)45"));        
+            assertEquals(true, instance.checkBracketsInString("12345"));        
+            assertEquals(true, instance.checkBracketsInString("1(23)45"));        
         assertEquals(true, instance.checkBracketsInString("1(2[]3)45"));        
         assertEquals(true, instance.checkBracketsInString("1(2[]3){45}"));           
         assertEquals(true, instance.checkBracketsInString("()"));         
