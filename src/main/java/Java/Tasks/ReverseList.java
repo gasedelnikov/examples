@@ -19,15 +19,15 @@ public class ReverseList implements ExampleInterface{
         ReverseListsElement el1 = new ReverseListsElement(1, el2);
         ReverseListsElement el0 = new ReverseListsElement(0, el1);
         
-        printResult("Start List  : " + el0.getChildsString());  
+        printResult("Start List  : " + el0.getChildString());
         printResult("CycleElement: " + el0.getCycleElement());
-        printResult("reverseList : " + reverseListSimple(el0).getChildsString());      
+        printResult("reverseList : " + reverseListSimple(el0).getChildString());
         
         el0.ref = el5;     
         printResult("");        
-        printResult("Start List  : " + el5.getChildsString());
+        printResult("Start List  : " + el5.getChildString());
         printResult("CycleElement: " + el5.getCycleElement());
-        printResult("reverseList : " + reverseListSimple(el0).getChildsString());
+        printResult("reverseList : " + reverseListSimple(el0).getChildString());
     }
    
     private ReverseListsElement reverseListSimple(ReverseListsElement e){
@@ -72,7 +72,7 @@ public class ReverseList implements ExampleInterface{
             return Integer.toString(value);
         }
         
-        public List<ReverseListsElement> getChilds(){
+        public List<ReverseListsElement> getChild(){
             List<ReverseListsElement> result = new ArrayList<>();
             ReverseListsElement e = this;     
             result.add(e);
@@ -89,9 +89,9 @@ public class ReverseList implements ExampleInterface{
             }
             return result;
         }
-        
-        public String getChildsString(){
-            List<ReverseListsElement> list = getChilds();
+
+        public String getChildString(){
+            List<ReverseListsElement> list = getChild();
 
             StringBuilder sb = new StringBuilder();
             for (ReverseListsElement el:list){
