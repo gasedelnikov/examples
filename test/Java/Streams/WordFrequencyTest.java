@@ -1,5 +1,6 @@
 package Java.Streams;
 
+import examples.streams.WordFrequency;
 import org.junit.Test;
 import java.util.List;
 import static org.junit.Assert.assertEquals;

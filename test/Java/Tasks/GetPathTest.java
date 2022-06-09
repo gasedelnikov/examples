@@ -4,6 +4,8 @@ import java.awt.Point;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+
+import examples.tasks.GetPath;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -16,7 +18,7 @@ public class GetPathTest {
     
     @Test    
     public void getPath() {
-        GetPath instance = new GetPath();    
+        GetPath instance = new GetPath();
         
         boolean[][] maze = new boolean[][]{{true, false, true, true, true}
                                           ,{true, false, true, false, true}

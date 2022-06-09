@@ -1,5 +1,5 @@
-import Java.Algorithms.IntersectionOfValues;
-import examples.ExampleInterface;
+import examples.algorithms.IntersectionOfValues;
+import examples.interfaces.ExampleInterface;
 
 /**
  * @author GASedelnikov

@@ -1,5 +1,6 @@
 package Java.Algorithms;
 
+import examples.algorithms.IntersectionOfValues;
 import org.junit.Test;
 
 import java.util.Arrays;

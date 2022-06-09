@@ -1,5 +1,6 @@
 package Java.Tasks;
 
+import examples.tasks.CheckBracketsInString;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
