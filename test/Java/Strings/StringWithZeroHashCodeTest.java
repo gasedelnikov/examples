@@ -1,5 +1,6 @@
 package Java.Strings;
 
+import examples.strings.StringWithZeroHashCode;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -12,7 +13,7 @@ public class StringWithZeroHashCodeTest {
     
     @Test    
     public void getStringWithTheSameHashCodeTest() {
-        StringWithZeroHashCode instance = new StringWithZeroHashCode(); 
+        StringWithZeroHashCode instance = new StringWithZeroHashCode();
         getStringWithTheSameHashCodeTest(instance, "ts_ab"  , 100);
         getStringWithTheSameHashCodeTest(instance, "a"      , 100);
         getStringWithTheSameHashCodeTest(instance, ""       , 100);

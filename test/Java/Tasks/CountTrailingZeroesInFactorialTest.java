@@ -1,6 +1,6 @@
 package Java.Tasks;
 
-import static Java.Tasks.CountTrailingZeroesInFactorial.*;
+import static examples.tasks.CountTrailingZeroesInFactorial.*;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
