@@ -20,9 +20,8 @@ public class Leetcode {
         ListNode x1 = new ListNode(1, x2);
 
         return;
-        //        rotate(new int[]{1,2,3,4,5,6,7}, 3);
+        //        rotate(new int[]{4,1,2,1,2}, 3);
     }
-
 
 
 // 1. Two Sum (Easy)
@@ -45,6 +44,7 @@ public class Leetcode {
 // 88. Merge Sorted Array (Easy)
 // 116. Populating Next Right Pointers in Each Node (Medium)
 // 120. Triangle (Medium)
+// 136. Single Number (Easy)
 // 153. Find Minimum in Rotated Sorted Array (Medium)
 // 154. Find Minimum in Rotated Sorted Array II (Hard)
 // 162. Find Peak Element (Medium)
@@ -790,6 +790,18 @@ public class Leetcode {
             }
         }
         return rez[0];
+    }
+
+// 136. Single Number (Easy)
+/*  Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+    You must implement a solution with a linear runtime complexity and use only constant extra space.*/
+    public int le_136_singleNumber(int[] nums) {
+// XORing 2 same numbers results in zero (and n ^ 0 = n), so res will be equal to the single number
+        int ans = nums[0];
+        for(int i = 1; i < nums.length; i++) {
+            ans = ans ^ nums[i];
+        }
+        return ans;
     }
 
 // 153. Find Minimum in Rotated Sorted Array (Medium)
